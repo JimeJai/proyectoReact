@@ -1,0 +1,13 @@
+.count-container {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(190, 171, 207);
+  gap: 2rem;
+}
+
+.count-boton {
+  margin: 2rem;
+  background-color: rgb(117, 117, 194);
+}

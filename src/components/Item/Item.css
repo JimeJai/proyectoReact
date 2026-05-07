@@ -1,0 +1,19 @@
+.tarjeta {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  background-color: rgb(49, 45, 45);
+}
+h3,
+p {
+  margin: 0rem;
+  color: white;
+}
+.card img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}

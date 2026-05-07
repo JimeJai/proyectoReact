@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Taller Titeres",
+    "price": 15000,
+    "description": "Dale vida a historias con tus manos y descubrí el mundo de los objetos en escena.",
+    "image": "/images/titeres.JPG"
+  },
+  {
+    "id": 2,
+    "name": "Taller Murga",
+    "price": 10000,
+    "description": "Ritmo, canto y energía colectiva para divertirte y compartir en grupo.",
+    "image": "/images/murga.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Danza",
+    "price": 30000,
+    "description": "Movimiento, conexión y expresión corporal para disfrutar el cuerpo en acción.",
+    "image": "/images/danza.JPG"
+  },
+  {
+    "id": 4,
+    "name": "Teatro",
+    "price": 30000,
+    "description": "Explorá tu creatividad, jugá con personajes y animate a expresarte en escena.",
+    "image": "/images/teatro.JPG"
+  }
+]
