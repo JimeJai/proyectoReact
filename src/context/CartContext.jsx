@@ -78,6 +78,7 @@ export const CartProvider = ({ children }) => {
   };
 
   const values = {
+    cart,
     addItem,
     removeItem,
     clearCart,
