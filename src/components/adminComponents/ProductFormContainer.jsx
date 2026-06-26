@@ -4,6 +4,7 @@ import { ProductFormUI } from "./ProductFormUI";
 import { validateProduct } from "../../utils/validateProduct";
 import { uploadImage } from "../../services/uploadImage";
 import { createProduct } from "../../services/productsService";
+import "./ProductFormContainer.css";
 
 export const ProductFormContainer = () => {
   const navigate = useNavigate();
@@ -29,11 +30,11 @@ export const ProductFormContainer = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.prevendDefault();
+    e.preventDefault();
     setErrors({}); //vacia los posibles errores q hayan quedado
     setLoading(true);
 
-    const newErrors = validateProduc({
+    const newErrors = validateProduct({
       ...product,
       file,
     }); //valida todos los campos, los del spread y la imagen en el file, si hay errors los guarda en newE
@@ -58,9 +59,9 @@ export const ProductFormContainer = () => {
         description: "",
       });
       setFile(null);
-      navigate(`/success/${id}`, { replace: true }); //borra el historial viejo y si van atras no aparece el formulario anterior
+      navigate(`/admin/products/success/${id}`, { replace: true }); //borra el historial viejo y si van atras no aparece el formulario anterior
     } catch (error) {
-      setErrors({ general: error.messege });
+      setErrors({ general: error.message });
     } finally {
       setLoading(false);
     }
