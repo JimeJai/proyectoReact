@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { useState } from "react";
+import "./Login.css";
 export const Login = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ export const Login = () => {
   return (
     <form onSubmit={handleSubmit} className="login-form">
       <h2>Iniciar sesión</h2>
-      <div className="">
+      <div className="form-group">
         <label>Email</label>
         <input
           type="email"
@@ -35,7 +36,7 @@ export const Login = () => {
           onChange={handleChange}
         />
       </div>
-      <div className="">
+      <div className="form-group">
         <label>Password</label>
         <input
           type="password"
